@@ -18,3 +18,9 @@ function submitForm(event){
     `
     currentIndex +=1;
 }
+
+function clearForm(event){
+    event.preventDefault();
+    console.log('Form Cleared');
+    document.getElementById("employeeForm").reset();
+}

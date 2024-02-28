@@ -11,14 +11,14 @@
   </header>
   <main>
     <h2>Add Employee</h2>
-  <form onSubmit="submitForm(event)">
+  <form id= "employeeForm" onsubmit="submitForm(event)">
     First Name: <input id="firstNameInput" type="text"/>
     <br>
     <br>
     Last Name: <input id="lastNameInput" type="text"/>
     <br>
     <br>
-    Employee ID: <input id="employeeID" type="number"/>
+    Employee ID: <input id="employeeID" type="text"/>
     <br>
     <br>
     Job Title: <input id="jobTitle" type="text"/>
@@ -28,6 +28,7 @@
     <br>
     <br>
     <input type ="submit" value="Submit Form"/>
+    <button onclick="clearForm(event)">Clear Form</button>
   </form>
   <h2>Employees</h2>
   <table>
