@@ -21,6 +21,6 @@ function submitForm(event){
 
 function clearForm(event){
     event.preventDefault();
-    console.log('Form Cleared');
+    console.log('Form Cleared!');
     document.getElementById("employeeForm").reset();
 }
