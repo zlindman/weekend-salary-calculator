@@ -18,20 +18,20 @@
     Last Name: <input id="lastNameInput" type="text"/>
     <br>
     <br>
-    Employee ID: <input id="employeeID" type="text"/>
+    Employee ID: <input id="idInput" type="text"/>
     <br>
     <br>
-    Job Title: <input id="jobTitle" type="text"/>
+    Job Title: <input id="titleInput" type="text"/>
     <br>
     <br>
-    Annual Salary: <input id="annualSalary" type="number"/>
+    Annual Salary: <input id="annualSalaryInput" type="number"/>
     <br>
     <br>
     <input type ="submit" value="Submit Form"/>
     <button onclick="clearForm(event)">Clear Form</button>
   </form>
   <h2>Employees</h2>
-  <table>
+  <table id="employeeInputs">
     <thead>
       <tr>
         <th>Employee Name</th>
@@ -45,13 +45,18 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td class="salaries"></td>
       </tr>
     </tbody>
   </table>
+  <br>
+  <br>
   </main>
+  <div id="totalAnnualSalaries">Total Annual Salaries: </div>
+  <br>
   <footer id="totalMonthly">
-    <p>Total Monthly</p>
+    <button onclick="addMonthlySalaries()">Calculate Monthly Total</button>
+    <p>Monthly Total (Budget $20,000): <span id="total"></span></p>
   </footer>
 </body>
 <script src="client.js"></script>
